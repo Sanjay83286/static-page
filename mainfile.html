@@ -1,0 +1,2557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+</head>
+<style>
+
+    *{
+        margin:0px;
+        box-sizing: border-box;
+        padding:0px;
+    }
+    :root{
+        --PetrolSlumber:#384554;
+        --white:white;
+        --orange:#f66d3b;
+        --yellow:rgb(230, 230, 127);
+        --choclate:#f07e0c;
+        --black:black;
+    }
+    .header1{
+        background-color:var(--PetrolSlumber);
+        color:var(--white);
+        display: flex;
+        justify-content:space-between;
+        height:7vh;
+        font-family:Arial;
+        font-size: small;
+    }
+    .navstreet{
+        display: flex;
+        align-items: center;  
+        margin-left:3%;
+       
+    }
+    .navstreet i,.navdrivin i{
+        color: var(--orange);
+        padding:0.5rem;
+        font-size: larger;
+    }
+    .navdrivin i{
+        border-right:0.1px solid var(--white);
+        
+    }
+    .navdrivin{
+   display: flex;
+   align-items: center;
+   margin-right:5%;
+    }
+    .header2{
+     background-color:var(--yellow);
+     display: flex;
+     align-items: center;
+     justify-content:space-between;
+     height:13vh;
+    }
+    .navcar{
+        display: flex;
+        font-size: xx-large;
+        padding-left: 4%;
+        width:50%;
+        color:var(--PetrolSlumber);
+    }
+    .navcar h3{
+        padding-left:3%;
+    }
+    .navcar i{
+        padding-top:2%;
+    }
+    .navhomesec{
+        display: flex;  
+        gap:0.5em;
+        justify-content: space-evenly;
+        font-family:Arial;
+        font-weight:600;
+        color: var(--white);
+        position: relative;
+    }
+   .navhomesec p:hover{
+         color:var(--choclate)
+   }
+    .navstart{
+        height:13vh;
+        width:15%;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        background-color: var(--orange);
+        color:var(--white)
+    }
+
+    .navstart i{
+        margin-left:0.5em;
+    
+    }
+    .dropdown{
+        width:30%;
+        height: 20vh;
+        background-color:var(--PetrolSlumber);
+        position: absolute;
+        top:4em;
+        font-weight: 300;
+        font-size:500;
+        right:2em;
+        display: none;
+    }
+    .dropdown p{
+        padding-top:0.5em;
+        margin-left:0.7em;  
+      
+    }
+.navhomesec .navhome,.navabout,.navpage,.navcourses,.navcontact{
+   padding: 2em 0.8em;
+}
+
+.header2 .navhomesec .navpage:hover + .dropdown,.dropdown:hover{
+  display:block;
+}
+.header2 .one{
+        display: none;
+    }
+.dropdown1{
+       display: none; 
+    }
+.image{
+    height:100vh;
+    width:100%;
+    background-image: url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/carousel-2.jpg");
+    background-size:100% 100%;
+    position: relative;
+}
+.image h1{
+    height:23em;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+   
+}
+.image span {
+    color: var(--white);
+    font-weight: 700;
+    font-size:3em;
+    margin-top:0.3em;
+}
+
+.image span .navour{
+       margin-bottom:0.3em;
+}
+.image .left{
+    width: 4%;
+    height: 2em;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.image .learn{
+    font-size: small;
+    font-weight: 300;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width:100%;
+    height:10vh;
+    color:var(--black);
+    display: flex;
+    justify-content: space-evenly;  
+}
+/* one  two   threee    */
+
+
+/* one two three */
+span .learn p{
+    width: 40%;
+    background-color: var(--white);
+    font-size:large;
+    text-align: center;
+    padding-top:0.9em;
+}
+span .learn .learnmore{
+    background-color: var(--yellow);
+    color: var(--white);
+}
+
+.navcontainerbottom .navcar2,.navnationaltext011,.navnationaltext013{
+    background-color: var(--orange);
+    width:20%;
+    font-size:larger;
+    height:9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.naveasytext,.navnationaltext012,.navnationaltext014{
+    font-family:Arial, sans-serif;
+    padding-left:0.5em;
+}
+.naveasytext p,.navnationaltext012 p,.navnationaltext014 p{
+    color:gray;
+    padding-top:0.5em;
+}
+.naveasy,.navnational,.navget{
+    width:30%;
+    display: flex;
+    padding:1.5em;
+    padding-right: 2.5em;
+    background-color: var(--white);
+    box-shadow: 0px 5px 5vh black;
+}
+.containerbottom{
+    display: flex;
+    position: absolute;
+    bottom:-180px;
+ 
+}
+span .navsafe{
+    margin-left: 0.5em;
+}
+.navcontainerbottom{
+    display: flex;
+    justify-content:center;
+    padding-bottom:12em;
+}
+.screenone{
+    display:none;
+}
+.twoimages{
+    width: 50%;
+
+}
+.carstwo{
+    width: 50%;
+    height:100vh;
+  
+}
+/*-- 2 images rightside text */
+.subimage{
+    height:100%;
+    width:100%;
+    position: relative;
+    background-image:url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/about-1.jpg");
+    background-size: 100% 100%;
+}
+.parentimage{
+    background-image: url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/about-2.jpg");
+    background-size: 100% 100%;
+    width:15%;
+    height:30%;
+    position: absolute;
+    z-index:5;
+    left:-5px;
+   
+}
+.navcarstwo{
+    padding:10em 0.5em;
+    padding-left: 7em;
+    display: flex;
+}
+.carstwo{
+    padding-top: 2em;
+    padding-left: 2em;
+
+}
+.prra{
+    display: inline-block;
+     height:4em;
+
+    background-color:var(--white);
+}
+.prra p{
+    margin-left: 6em;
+}
+.aboutright{
+    width: 50%;
+    padding:1px 2em;
+    margin-top: 5em;
+
+}
+.abouttext1{
+    font-family:Arial, sans-serif;
+    font-weight: 600;
+    color: var(--orange);
+}
+.aboutright p{
+    margin-bottom: 1em;
+}
+.helpright{
+    font-family:Arial;
+    font-weight:800;
+    font-size:xx-large;
+}
+p:nth-child(3),p:nth-child(4){
+  color:gray;
+  font-size: large;
+}
+.tickfully,.tickonline,.tickafordable,.tickbest{
+    display: flex;
+}
+.tickfully i,.tickonline i,.tickafordable i,.tickbest i{
+    color: var(--orange);
+    padding-right: 0.5em;
+}
+.navtick{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.navread p,.rightdial p{
+   margin: 0px;
+}
+.navread{
+    width:40%;
+    height:10vh;
+    background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightcall22{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-top:1em;
+
+}
+.rightdial{
+    display: flex;
+    align-items: center;
+    padding:0.5em;
+}
+.rightdial i{
+   font-size:xx-large;
+   color: var(--orange);
+   padding-right: 0.3em;
+}
+.navrightdial{
+    border:2px solid var(--orange);
+    box-shadow: 4px 2px 10px var(--yellow);
+}
+/* backsideimage */
+
+.container {
+  width: 100%;
+  height:250vh;
+ /* Adjust as needed */
+   background: linear-gradient(rgba(238, 238, 238, 0.8), rgba(250, 250, 250, 0.8)), 
+              url('https://demo.htmlcodex.com/2478/driving-school-website-template/img/carousel-1.jpg');
+  background-size:100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.navback .navcolor{
+    display: flex;
+    width: 100%;
+    height:100vh;
+    background-color:rgba(255,255, 255,0.2);
+}
+/* flex price*/
+.navflexprice{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 1em;
+    padding-top: 5em;
+    
+}
+.trandingtext{
+      color: var(--orange);
+      font-family: Arial, sans-serif;
+      font-weight: 600;
+}
+.navupskill{
+    font-size:xxx-large;
+    font-family: Arial;
+    font-weight:700;
+}
+.navcontainer2{
+    width: 100%;
+    height:30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5em;
+  margin-top: 3em;
+
+}
+.navprice1{
+    width:100%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price{
+    background-color: var(--orange);
+    width:20%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:5%;
+}
+
+.navtwo{
+    font-family:Arial, sans-serif;
+    font-size: larger;
+    font-weight:600;
+    color: var(--PetrolSlumber);
+}
+.navthree{
+    color:grey;
+    font-weight: 200;
+}
+.navfour{
+    display: flex;
+
+}
+.navfour i,.navfour p{
+    padding-right:0.5em;
+    font-size: small;
+}
+.bottomimage{
+    background-image: url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/courses-1.jpg");
+    background-size: 100% 100%;
+    width:100%;
+    height:50vh;
+}
+
+.navtwo p,.navthree , .navfour{
+    padding-bottom:1em;
+}
+.friend{
+    width:28%;
+}
+.navblack .black p{
+    display: none;
+}
+.navblack{
+    height: 50px;
+    transition-property:height;
+    transition-duration:0.4s;
+    transition-timing-function: ease-out;
+}
+.friend:hover{
+.bottomimage .navblack{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+.navblack .black p{
+    display:block;
+}
+.navblack{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.black{
+    width: 35%;
+    height: 17%;
+    color:var(--white);
+    border: 2px solid var(--orange);
+    font-family:Arial, sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+}
+.navblack .black:hover{
+  background-color: var(--orange);
+}
+/*details*/
+.navdetailes{
+ display: grid;
+ grid-template-columns:repeat(2,1fr);
+ grid-template-rows: repeat(3,1fr);
+    gap:10px;
+}
+.navdetailes .height{
+    height: 10vh;
+}
+
+input:focus{
+outline:none;
+}
+
+       /* Form container */
+       .appointment-form {
+        margin-top: 100px;
+            background:var(--orange);
+            padding: 30px;
+            width: 100%;
+            max-width:60%;
+           
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Heading */
+        .appointment-form h2 {
+            text-align: center;
+            font-weight: bold;
+            color: #0b2239;
+            margin-bottom: 20px;
+        }
+
+        /* Input fields */
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .input-group input,
+        .input-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        /* Submit button */
+        .btn-submit {
+            background-color: #0b2239;
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-submit:hover {
+            background-color: #092031;
+        }
+        @media (max-width: 480px) {
+            .input-group {
+                flex-direction: column;
+            }
+        }       
+
+        .top {
+
+            width:100%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-top:10em;
+            padding-left: 2em;
+       
+          
+        }
+        .content {
+            flex: 1;
+            min-width: 300px;
+            font-size: large;
+        }
+        .content h1{
+            font-family:Arial, sans-serif;
+            font-weight:850;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .features .feature-box h5{
+            font-size:xxx-larger;
+            font-family:Arial, sans-serif;
+            font-weight:850;
+            padding-bottom:0.5em;
+        }
+        .feature-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: calc(50% - 10px);
+            
+        }
+ 
+        .feature-box i {
+            background:var(--orange);
+            padding:10px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+       .feature-box p,.content p{
+            color:grey;
+        }
+        .navimage{
+            width:50%;
+            height:75vh;
+            position: relative;
+        }
+
+        .navimage p{
+            height: 100%;
+            background-image:url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/about-1.jpg");
+            background-size:80% 100%;
+            background-repeat: no-repeat;
+            background-position:start;
+            position: relative;
+            
+        }
+        .navimage p:after{
+            background-image:url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/about-2.jpg");
+            content: "";
+            background-size:cover;
+
+            height:45%;
+            width: 30%;
+            position: absolute;
+            right:110px;
+            top:-50px;
+        }
+ 
+        .newone{
+            width: 50%;
+        }
+
+        @media (max-width: 768px) {
+            .feature-box {
+                width: 100%;
+            }
+            .container {
+                flex-direction: column;
+            }
+        }
+.features .feature-box,.content h1,.content p{
+    padding-bottom: 1em;
+}
+/*names of founder*/
+.navnames{
+    width: 100%;
+}
+.navnames1{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    padding:3em;
+
+}
+.nameone{
+    width: 21%;
+    height:20vh;
+}
+.nameone .founder{
+
+    width:100%;
+    height:40vh;
+  background-image: url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/team-1.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+.nameone h6{
+    text-align: center;
+    font-size:1.2em;
+    font-family:  Arial, sans-serif;
+    padding: 1em;
+    padding-bottom: 0.2em;
+    
+
+}
+.nameone p{
+    text-align: center;
+    font-size: smaller;
+    font-weight:50;
+   
+}
+.nameone{
+    background-color:rgb(236, 233, 233);
+    height: 60vh;
+    border:5px solid transparent;
+}
+.navnames{
+    padding-top:23%;
+}
+.navnames p,.navnames h3{
+    display: flex;
+    justify-content: center;
+}
+.navnames p{
+    color:var(--orange);
+    font-family:Arial, sans-serif;
+    font-size: large;
+    font-weight: 600;
+}
+.navnames h3{
+   padding-top:2%;
+    font-family:Arial, sans-serif;
+    font-size:xx-large;
+    font-weight:600;
+}
+.nameone:hover {
+    border:10px solid var(--orange);
+    height: 55vh;
+    transition:height 0.5s ease-out;
+}
+.nameone .founder::after{
+    content: "";
+    height:0vh;
+    width: 100%;
+    opacity: 0.6;
+    background-color:var(--black);
+    visibility: hidden;
+}
+.nameone:hover .founder::after{
+    content: "";
+    height: 40vh;
+    width: 100%;
+    opacity: 0.6;
+    visibility: visible;
+    background-color:var(--black);
+    transition: height 1s ease;
+}
+/* slidings */
+        /* Hide radio buttons */
+        input[type="radio"] {
+            display: none;
+        }
+
+        /* Slider container */
+        .slider-container {
+            width: 80%;
+            max-width: 800px;
+            overflow: hidden;
+            margin: 20px auto;
+            position: relative;
+           padding-top: 100px;
+            border-radius: 10px;
+        }
+
+        /* Slides wrapper */
+        .slider {
+            display: flex;
+            width: 300%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            flex: 0 0 100%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border:0px solid transparent;
+        }
+
+        /* Navigation squares */
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .nav label {
+            width: 20px;
+            height: 20px;
+            background: gray;
+            margin: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        /* Selected square increases in size */
+        #slide1:checked ~ .nav label[for="slide1"],
+        #slide2:checked ~ .nav label[for="slide2"],
+        #slide3:checked ~ .nav label[for="slide3"] {
+            background: black;
+            width: 25px;
+            height: 25px;
+        }
+
+        /* Sliding effect */
+        #slide1:checked ~ .slider-container .slider { transform: translateX(0%); }
+        #slide2:checked ~ .slider-container .slider { transform: translateX(-100%); }
+        #slide3:checked ~ .slider-container .slider { transform: translateX(-200%); }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background: #0d2c50;
+            color: white;
+            padding: 40px 10%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 100px;
+        }
+
+        .footer h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .footer p, .footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .footer a:hover {
+            color: orange;
+        }
+
+        /* Left Section */
+        .footer .contact-info {
+            max-width: 250px;
+        }
+
+        .footer .contact-info h3 span {
+            color: orange;
+        }
+
+        .footer .contact-info p i {
+            margin-right: 10px;
+            color: orange;
+        }
+
+        /* Links Section */
+        .footer .links {
+            display: flex;
+            gap: 50px;
+        }
+
+        .footer .links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer .links ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Newsletter Section */
+        .footer .newsletter {
+            max-width: 250px;
+        }
+
+        .newsletter input {
+            width: 70%;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .newsletter button {
+            padding: 8px 12px;
+            background: orange;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background: none;
+            border: 1px solid white;
+            border-radius: 5px;
+            color: white;
+            margin-right: 5px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            background: orange;
+            border-color: orange;
+        }
+
+        /* Bottom Copyright */
+        .footer-bottom {
+            background: #091c38;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .footer-bottom a {
+            color: orange;
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .footer {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+            .footer .links {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .newsletter input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+
+
+@media screen and (max-width:700px){
+    .image{
+    height:100vh;
+    width:100%;
+    background-image: url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/carousel-2.jpg");
+}
+.image h1{
+    height:23em;
+    width:100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+   
+}
+.image span {
+    color: var(--white);
+    font-weight:700;
+    font-size:2em;
+    margin-top:0em;
+}
+
+
+.image .left{
+    width: 4%;
+    height: 2em;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.image .learn{
+    font-size: small;
+    font-weight: 300;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width:100%;
+    height:10vh;
+    color:var(--black);
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+span .learn p{
+    width: 40%;
+    background-color: var(--white);
+    font-size:large;
+    text-align: center;
+  
+}
+span .learn .learnmore{
+    background-color: var(--yellow);
+    color: var(--white);
+}
+span .navsafe{
+    text-align: center;
+}
+span .navsafe{
+    margin-left:0.2em;
+}
+}
+
+@media screen and (max-width:950px){
+    .header1{
+        display: none;
+    }
+    .navhomesec,.navstart{
+        display: none;
+    }
+    .header2 .one{
+        display:block;
+    }
+    .dropdown1{
+        padding-left:1.5em;
+        width:100%;
+        height:30vh;
+        background-color: #f66d3b;
+        display:none;
+    }
+    .dropdown1 p,.pagesinpages{
+        display: inline-block;
+        width: 100%;
+        padding-top:0.9em;
+    }
+    .dropdown1 p:hover{
+        color:var(--white);
+    }
+    .dropdown2{
+        border:1px solid gray;
+        display: none;
+    }
+    .dropdown2 p,#pages{
+        width:100%;
+        padding-left:1em;  
+    }
+
+    .pagesinpages:hover{
+        color: var(--white);
+  
+    }
+    .dropdown2 p:hover{
+        background-color:var(--yellow);
+        opacity:0.9;
+        color:black;
+    }
+    .dropdown1:has(#pages:checked)  .dropdown2{
+        display:block;
+    }
+
+    .dropdown1:has(#pages:checked,.dropdown2:hover){
+        height:55vh;
+    }
+    #pages{
+        display: none;
+        width:100%;
+    }
+    #navbar{
+        display: none;
+    }
+    .navbarparent{
+        font-size: xx-large;
+        margin-right: 1em;
+        padding: 0.2em;
+        padding-top:0px;
+        padding-right: 0.3em;
+        border:0.5px solid gray;
+    }
+    .navbarparent:hover{
+        border:4px solid gray;
+    }
+    .header2:has(#navbar:checked) + .dropdown1{
+        display: block;
+    }
+}
+@media screen and (max-width:990px){
+    .navcontainerbottom{
+        display: none;
+    }
+    .screennavcar2,.screennavnationaltext011,.screennavnationaltext013{
+        width:3.5em;
+        background-color: var(--orange);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:50%;
+        padding: 1em;
+    }
+    .screennaveasy,.screennavnational,.screennavget{
+        display: flex;
+        align-items:flex-start;
+         padding:20px;
+        width: 100%;
+        height: 30%;
+
+
+
+    }
+    .screennaveasytext,.screennavnationaltext012,.screennavnationaltext014{
+        padding-left: 3%;
+        
+        
+    }
+    .screennaveasytext p,.screennavnationaltext012 p,.screennavnationaltext014 p{
+        color:gray;
+        font-size:15px;
+        
+    }
+    .screennaveasytext h4,.screennavnationaltext012 h4,.screennavnationaltext014 h4{
+        padding-bottom:2%;
+        font-family: Arial;
+      
+    }
+    .insidescreentwo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:15%;
+        box-shadow:0px 0px 10px var(--black);
+        width: 60%;
+        height: 30em;
+        
+    }
+    .screenone{
+        display: flex;
+        justify-content: center;
+        padding-top:15%;
+        padding-bottom: 15%;
+    
+    }
+}
+@media screen and (max-width:1030px){
+    .subimage{
+    height:110vh;
+    width:100%;
+    position: relative;
+    background-image:url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/about-1.jpg");
+    background-size: 100% 100%;
+}
+.parentimage{
+    background-image: url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/about-2.jpg");
+    background-size: 100% 100%;
+    width:15%;
+    height:30%;
+    position: absolute;
+    z-index:5;
+    left:-5px;
+   
+}
+.navcarstwo{
+    padding:5em 0.5em;
+    padding-left: 7em;
+    display: flex;
+}
+.carstwo{
+    padding-top: 2em;
+    padding-left: 2em;
+
+}
+.prra{
+    display: inline-block;
+     height:4em;
+
+    background-color:var(--white);
+}
+.prra p{
+    margin-left: 6em;
+}
+.aboutright{
+    width: 50%;
+    padding:1px 2em;
+    margin: 0px;
+
+}
+.abouttext1{
+    font-family:Arial, sans-serif;
+    font-weight: 600;
+    color: var(--orange);
+}
+.aboutright p{
+    margin-bottom: 1em;
+}
+.helpright{
+    font-family:Arial;
+    font-weight:800;
+    font-size:xx-large;
+}
+p:nth-child(3),p:nth-child(4){
+  color:gray;
+  font-size: large;
+}
+.tickfully,.tickonline,.tickafordable,.tickbest{
+    display: flex;
+}
+.tickfully i,.tickonline i,.tickafordable i,.tickbest i{
+    color: var(--orange);
+    padding-right: 0.5em;
+}
+.navtick{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.navread p,.rightdial p{
+   margin: 0px;
+}
+.navread{
+    width:40%;
+    height:10vh;
+    background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightcall22{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-top:1em;
+
+}
+.rightdial{
+    display: flex;
+    align-items: center;
+    padding:0.5em;
+}
+.rightdial i{
+   font-size:xx-large;
+   color: var(--orange);
+   padding-right: 0.3em;
+}
+.navrightdial{
+    border:2px solid var(--orange);
+    box-shadow: 4px 2px 10px var(--yellow);
+}
+}
+@media screen and (max-width:950px){
+.navcarstwo{
+    display: flex;
+    flex-direction: column;
+}
+.prra{
+    display: inline-block;
+    background-color:var(--white);
+}
+.subimage{
+    height:100%;
+    width:70%;
+    background-image:url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/about-1.jpg");
+    background-size: 100% 100%;
+}
+.parentimage{
+    background-image: url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/about-2.jpg");
+    background-size: 100% 100%;
+    width:25%;
+    height:35%;
+    transform: translate(90px,-50px);
+}
+.navcarstwo{
+    padding:0px 0px ;
+    padding-left:1em;
+    display: flex;
+}
+.carstwo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 2em;
+    padding-left: 2em;
+    position: relative;
+
+}
+
+.prra p{
+    margin-left: 0px;
+}
+.aboutright{
+    width:100%;
+    padding:3em 2em;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.abouttext1{
+    font-family:Arial, sans-serif;
+    font-weight: 600;
+    color: var(--orange);
+    display: flex;
+    justify-content: flex-start;
+}
+.aboutright p{
+    margin-bottom: 1em;
+}
+.helpright{
+    font-family:Arial;
+    font-weight:800;
+    font-size:xx-large;
+}
+p:nth-child(3),p:nth-child(4){
+  color:gray;
+  font-size: large;
+}
+.tickfully,.tickonline,.tickafordable,.tickbest{
+    display: flex;
+}
+.tickfully i,.tickonline i,.tickafordable i,.tickbest i{
+    color: var(--orange);
+    padding-right: 0.5em;
+}
+.navtick{
+    width:70%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.navread p,.rightdial p{
+   margin: 0px;
+}
+.navread{
+    width:40%;
+    height:10vh;
+    background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightcall22{
+    width:65%;
+    display: flex;
+    justify-content: space-between;
+    padding-top:1em;
+
+}
+.rightdial{
+    display: flex;
+    align-items: center;
+    padding:0.5em;
+}
+.rightdial i{
+   font-size:xx-large;
+   color: var(--orange);
+   padding-right: 0.3em;
+}
+.navrightdial{
+    border:2px solid var(--orange);
+    box-shadow: 4px 2px 10px var(--yellow);
+}
+}
+/* images inside image and right side */
+@media screen and (max-width:550px){
+.subimage{
+    height:80%;
+    width:90%;
+    position: relative;
+    background-image:url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/about-1.jpg");
+    background-size:cover;
+}
+.parentimage{
+    background-image: url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/about-2.jpg");
+    background-size: 100% 100%;
+    width:35vw;
+    height:30vh;
+    position: absolute;
+    z-index:5;
+    left:-50px;
+   
+}
+.navcarstwo{
+    padding:5em 0.5em;
+    padding-left:1px;
+    display: flex;
+}
+.carstwo{
+  display: flex;
+  justify-content: end;
+  padding-right: 1em;
+
+}
+
+.prra{
+    display: inline-block;
+     height:4em;
+    background-color:var(--white);
+}
+.prra p{
+   
+}
+.aboutright{
+    width: 100%;
+    padding:1px 2em;
+    margin-top: 1em;
+
+}
+.abouttext1{
+    font-family:Arial, sans-serif;
+    font-weight: 600;
+    color: var(--orange);
+}
+.aboutright p{
+    margin-bottom: 1em;
+}
+.helpright{
+    font-family:Arial;
+    font-weight:800;
+    font-size:xx-large;
+}
+p:nth-child(3),p:nth-child(4){
+  color:gray;
+  font-size: large;
+}
+.tickfully,.tickonline,.tickafordable,.tickbest{
+    display: flex;
+}
+.tickfully i,.tickonline i,.tickafordable i,.tickbest i{
+    color: var(--orange);
+    padding-right: 0.5em;
+}
+.navtick{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content:start;
+}
+.navread p,.rightdial p{
+   margin: 0px;
+}
+.navread{
+    width:200px;
+    height:10vh;
+    background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightcall22{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding-top:1em;
+
+}
+.rightdial{
+    display: flex;
+    align-items: center;
+    padding:0.5em;
+}
+.rightdial i{
+   font-size:xx-large;
+   color: var(--orange);
+   padding-right: 0.3em;
+}
+.navrightdial{
+    margin-top: 3%;
+    width:200px;
+    border:2px solid var(--orange);
+    box-shadow: 4px 2px 10px var(--yellow);
+}
+}    
+/* images which are side by side with price*/
+@media  screen and (max-width:947px) {
+    .container{
+        height:350vh;
+    }
+    .navflexprice{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(2,40%);
+    justify-content:space-evenly;
+    padding: 0px 1em;
+    padding-top: 5em;
+    
+}
+.trandingtext{
+      color: var(--orange);
+      font-family: Arial, sans-serif;
+      font-weight: 600;
+}
+.navupskill{
+    font-size:xxx-large;
+    font-family: Arial;
+    font-weight:700;
+}
+.navcontainer2{
+    width: 100%;
+    height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5em;
+  margin-top: 3em;
+}
+.navprice1{
+    width:100%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.price{
+    background-color: var(--orange);
+    width:20%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:5%;
+}
+
+.navtwo{
+    font-family:Arial, sans-serif;
+    font-size: larger;
+    font-weight:600;
+    color: var(--PetrolSlumber);
+}
+.navthree{
+    color:grey;
+    font-weight: 200;
+}
+.navfour{
+    display: flex;
+
+}
+.navfour i,.navfour p{
+    padding-right:0.5em;
+    font-size: small;
+}
+.bottomimage{
+    background-image: url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/courses-1.jpg");
+    background-size: 100% 100%;
+    width:100%;
+    height:50vh;
+}
+
+.navtwo p,.navthree , .navfour{
+    padding-bottom:1em;
+}
+.friend{
+    width:100%;
+    margin-top: 1em;
+}
+.navblack .black p{
+    display: none;
+}
+.navblack{
+    height: 50px;
+    transition-property:height;
+    transition-duration:0.4s;
+    transition-timing-function: ease-out;
+}
+.friend:hover{
+.bottomimage .navblack{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+.navblack .black p{
+    display:block;
+}
+.navblack{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.black{
+    width: 35%;
+    height: 17%;
+    color:var(--white);
+  border: 2px solid var(--orange);
+  font-family:Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+.navblack .black:hover{
+  background-color: var(--orange);
+}
+}
+@media (min-width:100px) and (max-width:770px){
+    .container {
+  width: 100%;
+  height:400vh;
+ /* Adjust as needed */
+   background: linear-gradient(rgba(238, 238, 238, 0.8), rgba(250, 250, 250, 0.8)), 
+              url('https://demo.htmlcodex.com/2478/driving-school-website-template/img/carousel-1.jpg');
+  background-size:100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+    .navflexprice{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(1,65%);
+    justify-content:space-evenly;
+    padding: 0px 1em;
+    padding-top: 5em;
+    
+}
+.trandingtext{
+      color: var(--orange);
+      font-family: Arial, sans-serif;
+      font-weight: 600;
+}
+.navupskill{
+    font-size:xxx-large;
+    font-family: Arial;
+    font-weight:700;
+}
+.navcontainer2{
+    width: 100%;
+    height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5em;
+  margin-top: 3em;
+}
+.navprice1{
+    width:100%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.price{
+    background-color: var(--orange);
+    width:20%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:5%;
+}
+
+.navtwo{
+    font-family:Arial, sans-serif;
+    font-size: larger;
+    font-weight:600;
+    color: var(--PetrolSlumber);
+}
+.navthree{
+    color:grey;
+    font-weight: 200;
+}
+.navfour{
+    display: flex;
+
+}
+.navfour i,.navfour p{
+    padding-right:0.5em;
+    font-size: small;
+}
+.bottomimage{
+    background-image: url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/courses-1.jpg");
+    background-size: 100% 100%;
+    width:100%;
+    height:50vh;
+}
+
+.navtwo p,.navthree , .navfour{
+    padding-bottom:1em;
+}
+.friend{
+    width:100%;
+    margin-top: 1em;
+}
+.navblack .black p{
+    display: none;
+}
+.navblack{
+    height: 50px;
+    transition-property:height;
+    transition-duration:0.4s;
+    transition-timing-function: ease-out;
+}
+.friend:hover{
+.bottomimage .navblack{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+.navblack .black p{
+    display:block;
+}
+.navblack{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.black{
+    width: 35%;
+    height: 17%;
+    color:var(--white);
+  border: 2px solid var(--orange);
+  font-family:Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+.navblack .black:hover{
+  background-color: var(--orange);
+}
+}
+@media screen and (width<500px){
+    .container {
+  width: 100%;
+  height:400vh;
+ /* Adjust as needed */
+   background: linear-gradient(rgba(238, 238, 238, 0.8), rgba(250, 250, 250, 0.8)), 
+              url('https://demo.htmlcodex.com/2478/driving-school-website-template/img/carousel-1.jpg');
+  background-size:100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+    .navflexprice{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(1,90%);
+    justify-content:space-evenly;
+    padding: 0px 1em;
+    padding-top: 3em;
+    
+}
+.trandingtext{
+      color: var(--orange);
+      font-family: Arial, sans-serif;
+      font-weight: 600;
+}
+.navupskill{
+    font-size:xx-large;
+    font-family: Arial;
+    font-weight:700;
+}
+.navcontainer2{
+    width: 100%;
+    height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:1em;
+  margin-top: 1em;
+}
+.navprice1{
+    width:100%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.price{
+    background-color: var(--orange);
+    width:20%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:5%;
+}
+
+.navtwo{
+    font-family:Arial, sans-serif;
+    font-size: larger;
+    font-weight:600;
+    color: var(--PetrolSlumber);
+}
+.navthree{
+    color:grey;
+    font-weight: 200;
+}
+.navfour{
+    display: flex;
+
+}
+.navfour i,.navfour p{
+    padding-right:0.5em;
+    font-size: small;
+}
+.bottomimage{
+    background-image: url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/courses-1.jpg");
+    background-size: 100% 100%;
+    width:100%;
+    height:35vh;
+}
+
+.navtwo p,.navthree , .navfour{
+    padding-bottom:1em;
+}
+.friend{
+    width:100%;
+    margin-top: 1em;
+}
+.navblack .black p{
+    display: none;
+}
+.navblack{
+    height: 50px;
+    transition-property:height;
+    transition-duration:0.4s;
+    transition-timing-function: ease-out;
+}
+.friend:hover{
+.bottomimage .navblack{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+.navblack .black p{
+    display:block;
+}
+.navblack{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.black{
+    width: 35%;
+    height: 17%;
+    color:var(--white);
+  border: 2px solid var(--orange);
+  font-family:Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+.navblack .black:hover{
+  background-color: var(--orange);
+}
+       /* Form container */
+       .appointment-form {
+        margin-top:1em;
+        height: 80vh;
+            background:var(--orange);
+            padding:1em;
+            width: 100%;
+            max-width:90%;
+           
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Heading */
+        .appointment-form h2 {
+            text-align: center;
+            font-weight: bold;
+            color: #0b2239;
+            margin-bottom:5%;
+        }
+
+        /* Input fields */
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+
+        .input-group input,
+        .input-group textarea {
+            width: 100%;
+            padding: 5px;
+            font-size: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        /* Submit button */
+        .btn-submit {
+            background-color: #0b2239;
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 5px;
+            font-size:10px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-submit:hover {
+            background-color: #092031;
+        }
+}
+/*images inside image using new approch*/
+@media screen and (max-width:983px){
+    .top{
+        display: flex;
+        flex-direction: column;
+    }
+
+.top {
+    display: flex;
+    flex-direction: column;
+width:100%;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+padding-top:10em;
+padding-left: 1em;
+
+
+}
+.content {
+flex: 1;
+min-width: 300px;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.content h1{
+font-family:Arial, sans-serif;
+font-weight:600;
+}
+.features {
+display: flex;
+
+width: 100%;
+flex-wrap: wrap;
+gap: 15px;
+}
+.features .feature-box h5{
+    width: 100%;
+font-size:xxx-larger;
+font-family:Arial, sans-serif;
+font-weight:850;
+padding-bottom:0.5em;
+}
+.feature-box {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 2em;
+
+}
+
+.feature-box i {
+background:var(--orange);
+padding:10px;
+border-radius: 5px;
+font-size: 20px;
+}
+.feature-box p,.content p{
+color:grey;
+
+}
+.navimage{
+width:100%;
+height:75vh;
+position: relative;
+display: flex;
+justify-content: center;
+padding-top: 3em;
+
+}
+
+.navimage p{
+height: 100%;
+background-image:url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/about-1.jpg");
+background-size:cover;
+background-repeat: no-repeat;
+background-position:start;
+position: relative;
+width:70%;
+
+}
+.navimage p:after{
+background-image:url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/about-2.jpg");
+content: "";
+background-size:cover;
+
+height:45%;
+width: 30%;
+position: absolute;
+right:0px;
+top:-40px;
+}
+
+.newone{
+width: 50%;
+}
+
+}
+ 
+@media screen and(max-width:500px){
+    .top{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top {
+
+width:100%;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+padding-top:10em;
+padding-left: 2em;
+
+
+}
+.content {
+flex: 1;
+min-width: 300px;
+font-size: large;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.content h1{
+font-family:Arial, sans-serif;
+font-weight:850;
+}
+.features {
+display: flex;
+flex-direction:column;
+width: 70%;
+
+flex-wrap: wrap;
+gap: 15px;
+}
+.features .feature-box h5{
+font-size:xxx-larger;
+font-family:Arial, sans-serif;
+font-weight:850;
+padding-bottom:0.5em;
+}
+.feature-box {
+display: flex;
+align-items: center;
+gap: 10px;
+width: calc(50% - 10px);
+
+}
+
+.feature-box i {
+background:var(--orange);
+padding:10px;
+border-radius: 5px;
+font-size: 20px;
+}
+.feature-box p,.content p{
+color:grey;
+}
+.navimage{
+width:100%;
+height:75vh;
+position: relative;
+display: flex;
+justify-content: center;
+padding-top: 3em;
+
+}
+
+.navimage p{
+height: 100%;
+background-image:url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/about-1.jpg");
+background-size:cover;
+background-repeat: no-repeat;
+background-position:start;
+position: relative;
+width:70%;
+
+}
+.navimage p:after{
+background-image:url("https://demo.htmlcodex.com/2478/driving-school-website-template/img/about-2.jpg");
+content: "";
+background-size:cover;
+
+height:45%;
+width: 30%;
+position: absolute;
+right:0px;
+top:-40px;
+}
+
+.newone{
+width: 50%;
+}
+
+}
+
+</style>
+<body>
+    <header>
+        <div class="header1">
+          <div class="navstreet">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>123 Street, New York, USA</p>
+            <i class="fa-regular fa-clock" style="margin-left:1em;"></i>
+            <p>Mon - Fri : 09.00 AM - 09.00 PM</p>
+          </div>
+         <div class="navdrivin">
+            <i class="fa-solid fa-phone" style="border-right:0px solid;"></i>
+            <p>+012 345 6789</p>
+            <i class="fa-brands fa-facebook" style="margin-left:2em;"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+         </div>
+        </div>
+        <div class="header2">
+            <div class="navcar">
+                <i class="fa-solid fa-car" style="color: #f66d3b;"></i>
+                <h3>Drivin</h3>
+            </div>
+            <div class="navhomesec">
+                <div class="navhome">
+                  <p>HOME</p>
+                </div>
+                <div class="navabout">
+                  <p>ABOUT</p>
+                </div>
+                <div class="navcourses">
+                  <p>COURSES</p>
+                </div>
+                <div class="navpage">
+                   <p>PAGES</p> 
+                </div>
+                  <div class="dropdown" style="position:sticky; z-index: 1; ">
+                   <p>Features</p>
+                   <p>Appointment</p>
+                   <p>Our Team</p>
+                   <p>Testimonial</p>
+                  </div>
+                <div class="navcontact">
+                   <p>CONTACT</p>
+                </div>
+            </div>
+              <div class="navstart">
+                <p>GET STARTED</p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            <div class="one">
+              <label for="navbar" class="navbarparent">☰</label>
+              <input type="checkbox" id="navbar">
+            </div>
+        </div>
+        <div class="dropdown1">
+            <p>HOME</p>
+            <p>ABOUT</p>
+            <p>COURSES</p>
+            <input type="checkbox" id="pages">
+            <label for="pages"  class="pagesinpages">PAGES 
+            <i class="fa-solid fa-chevron-down" style="padding-left:0.5em;font-size: small;"></i></label>
+            <div class="dropdown2">
+                <p>Features</p>
+                <p>Appointment</p>
+                <p>Our Team</p>
+                <p>Testimonial</p>
+            </div>
+            <p>CONTACT</p>
+        </div>
+    </header>
+    <section>
+        <div class="image">
+            <h1>
+                <p class="left"><i class="fa-solid fa-chevron-left"></i></p>
+              <span>
+                <p class="navsafe">Safe Driving Is</p>
+                <p class="navour"> Our Top Priority</p>
+                <div class=learn>
+                  <p class="learnmore">Learn More</p>
+                  <p class="ourcourse">Our Courses</p>
+                </div>
+              </span>
+                <p class="left"><i class="fa-solid fa-chevron-right"></i></p>
+            </h1>  
+        </div>
+        <div class="navcontainerbottom">
+            <div class="containerbottom">
+                <div class="naveasy">
+                  <div class="navcar2">
+                    <i class="fa-solid fa-car"></i>
+                  </div>
+                  <div class="naveasytext">
+                    <h4>Easy Driving Learn</h4>
+                    <p>Clita erat ipsum lorem <br>sit sed stet duo justo erat amet</p>
+                  </div>
+                </div>
+                <div class="navnational">
+                   <div class="navnationaltext011">
+                     <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div class="navnationaltext012">
+                        <h4>National Instructor</h4>
+                        <p>Clita erat ipsum lorem sit sed <br>stet duo justo erat amet</p>
+                    </div>
+                </div>
+                <div class="navget">
+                    <div class="navnationaltext013">
+                        <i class="fa-regular fa-file"></i>
+                    </div>
+                        <div class="navnationaltext014">
+                            <h4>Get licence</h4>
+                            <p>Clita erat ipsum lorem sit sed stet duo<br> justo erat amet</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+   
+   </section>  
+<section1>
+    <div class="screenone">
+        <div class="insidescreentwo">
+            <div class="screennaveasy">
+              <div class="screennavcar2">
+                <i class="fa-solid fa-car"></i>
+              </div>
+              <div class="screennaveasytext">
+                <h4>Easy Driving Learn</h4>
+                <p>Clita erat ipsum lorem sit sed stet duo justo erat amet</p>
+              </div>
+            </div>
+            <div class="screennavnational">
+               <div class="screennavnationaltext011">
+                 <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="screennavnationaltext012">
+                    <h4>National Instructor</h4>
+                    <p>Clita erat ipsum lorem sit sed stet duo justo erat amet</p>
+                </div>
+            </div>
+            <div class="screennavget">
+                <div class="screennavnationaltext013">
+                    <i class="fa-regular fa-file"></i>
+                </div>
+                    <div class="screennavnationaltext014">
+                        <h4>Get licence</h4>
+                        <p>Clita erat ipsum lorem sit sed stet duo justo erat amet</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</section1> 
+<section>
+    <div class="navcarstwo">
+      <div class="carstwo">
+        <span class="prra">
+          <p class="parentimage"></p>
+        </span>
+        <p  class="subimage" ></p>
+      </div>
+      <div class="aboutright">
+        <p class="abouttext1">About Us</p>
+        <p class="helpright">We Help Students To Pass <br>Test & Get A License On<br> The First Try</p>
+        <p >Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.  <br> diam amet diam et eos. Clita erat ipsum et<br> lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+
+        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum<br> sit. Aliqu diam amet diam et eos. Clita erat ipsum et <br>lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+       <div class="navtick">
+         <div class="tickfully">
+          <i class="fa-solid fa-check"></i>
+          <p>Fully Licensed</p>
+         </div>
+         <div class="tickonline">
+            <i class="fa-solid fa-check"></i>
+            <p>Online Tracking</p>
+          </div>
+          <div class="tickafordable">
+            <i class="fa-solid fa-check"></i>
+            <p>Afordable Fee</p>
+          </div>
+          <div class="tickbest">
+            <i class="fa-solid fa-check"></i>
+            <p>Best Trainers</p>
+          </div>
+        </div>
+        <div class="rightcall22">
+          <div class="navread">
+            <p>Read More</p>
+          </div>
+          <div class="navrightdial">
+            <div class="rightdial">
+              <i class="fa-solid fa-square-phone"></i>
+              <p>+012 345 6789</p>
+            </div>
+         
+        </div>
+       </div>
+      </div>
+      </div>
+    </div>
+</section>  
+  <section3>
+    <div class="container">
+ 
+        <div class="navcontainer2">
+            <div class="trandingtext">
+              <p>Tranding Courses</p>
+            </div>
+            <div class="navupskill">
+                <p>Our Courses Upskill You <br>With Driving Training</p>
+            </div>
+          <!--2ns inside-->
+            <div class="navflexprice">
+             <div class="friend">
+              <div class="navprice1">
+                <div class="price">
+                    <p>$99</p>
+                </div>
+                <div class="navtwo">
+                    <p>Automatic Car Lessons</p>
+                </div>
+                <div class="navthree">
+                    <p>Tempor erat elitr rebum at clita dolor<br> diam ipsum sit diam amet diam et eos</p>
+                </div>
+                <div class="navfour">
+                    <i class="fa-solid fa-signal"></i>
+                    <p>Beginner </p> /
+                    <i class="fa-solid fa-calendar-days"></i>
+                    3 Week
+                </div>
+              </div>
+              <div class="bottomimage">
+                    <div class="navblack">
+                        <div class="black">
+                          <p>Read More</p>
+                         </div>
+                    </div>
+              </div>
+            </div>
+            <!--secondone-->
+            <div class="friend">
+                <div class="navprice1">
+                  <div class="price">
+                      <p>$99</p>
+                  </div>
+                  <div class="navtwo">
+                      <p>Highway Driving Lesson</p>
+                  </div>
+                  <div class="navthree">
+                      <p>Tempor erat elitr rebum at clita dolor<br> diam ipsum sit diam amet diam et eos</p>
+                  </div>
+                  <div class="navfour">
+                      <i class="fa-solid fa-signal"></i>
+                      <p>Beginner </p> /
+                      <i class="fa-solid fa-calendar-days"></i>
+                      3 Week
+                  </div>
+                </div>
+                <div class="bottomimage" style="background-image: url('https://demo.htmlcodex.com/2478/driving-school-website-template/img/courses-2.jpg'); background-size:100% 100%;">
+                    <div class="navblack">
+                        <div class="black">
+                          <p>Read More</p>
+                         </div>
+                    </div>
+              </div>
+              </div>
+              <div class="friend">
+                <div class="navprice1">
+                  <div class="price">
+                      <p>$99</p>
+                  </div>
+                  <div class="navtwo">
+                      <p>Automatic Car Lessons</p>
+                  </div>
+                  <div class="navthree">
+                      <p>Tempor erat elitr rebum at clita dolor<br> diam ipsum sit diam amet diam et eos</p>
+                  </div>
+                  <div class="navfour">
+                      <i class="fa-solid fa-signal"></i>
+                      <p>Beginner </p> /
+                      <i class="fa-solid fa-calendar-days"></i>
+                      3 Week
+                  </div>
+                </div>
+                <div class="bottomimage" style="background-image: url('https://demo.htmlcodex.com/2478/driving-school-website-template/img/courses-3.jpg'); background-size:100% 100%;">
+                    <div class="navblack">
+                        <div class="black">
+                          <p>Read More</p>
+                         </div>
+                    </div>
+              </div>
+              </div>
+        </div>
+<div class="appointment-form">
+    <h2>Make Appointment</h2>
+    <form>
+        <div class="input-group">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+        </div>
+        <div class="input-group">
+            <input type="text" placeholder="Courses Type">
+            <input type="text" placeholder="Car Type">
+        </div>
+        <div class="input-group">
+            <textarea placeholder="Message"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Submit</button>
+    </form>
+</div>
+ </div>
+
+</section3>
+</div>
+
+<section4>
+    <div class="top">
+        <div class="content">
+            <h1>Best Driving Training<br> Agency In Your City</h1>
+            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.<br> Aliqu diam amet diam et eos.Clita erat ipsum et lorem et sit, sed stet<br> lorem sit clita duo justo magna dolore erat amet</p>
+            
+            <div class="features">
+                <div class="feature-box">
+                    <i>✔</i>
+                    <div>
+                        <h5>Fully Licensed</h5>
+                        <p>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <i>✔</i>
+                    <div>
+                        <h5>Online Tracking</h5>
+                        <p>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <i>✔</i>
+                    <div>
+                        <h5>Affordable Fee</h5>
+                        <p>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <i>✔</i>
+                    <div>
+                        <h5>Best Trainers</h5>
+                        <p>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navimage">
+            <p></p>
+        </div>
+    </div>
+</section4>
+<section5>
+    <div class="navnames">
+        <p>Meet The Team</p>
+        <h3>We Have Great Experience Of Driving</h3>
+        <div class="navnames1">
+            <div class="nameone">
+                <p class="founder"></p>
+                <h6>Full Name</h6>
+                <p>Trainer</p>
+            </div>
+            <div class="nameone">
+                <p class="founder" style="background-image: url('https://demo.htmlcodex.com/2478/driving-school-website-template/img/team-2.jpg');background-size: cover;">
+
+                </p>
+                <h6>Full Name</h6>
+                <p>Trainer</p>
+            </div>
+            <div class="nameone" >
+                <p class="founder" style="background-image: url('https://demo.htmlcodex.com/2478/driving-school-website-template/img/team-3.jpg');background-size:cover;"></p>
+                <h6>Full Name</h6>
+                <p>Trainer</p>
+            </div>
+            <div class="nameone">
+                <p class="founder" style="background-image: url('https://demo.htmlcodex.com/2478/driving-school-website-template/img/team-4.jpg');background-size:cover"></p>
+                <h6>Full Name</h6>
+                <p>Trainer</p>
+            </div>
+        </div>
+    </div>
+</section5>
+<section6>
+    <!-- Radio buttons for navigation -->
+<input type="radio" name="slider" id="slide1" checked>
+<input type="radio" name="slider" id="slide2">
+<input type="radio" name="slider" id="slide3">
+
+<!-- Slider container -->
+<div class="slider-container">
+    <div class="slider">
+        <div class="slide"><iframe src="file2.html" allowfullscreen></iframe></div>
+        <div class="slide"><iframe src="file3.html" allowfullscreen></iframe></div>
+        <div class="slide"><iframe src="file4.html" allowfullscreen></iframe></div>
+    </div>
+</div>
+
+<!-- Navigation squares -->
+<div class="nav">
+    <label for="slide1"></label>
+    <label for="slide2"></label>
+    <label for="slide3"></label>
+</div>
+</section6>
+<section7>
+    <!-- Footer -->
+<footer>
+    <div class="footer">
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h3><i class="fas fa-car"></i> <span>Drivin</span></h3>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+            <p><i class="fas fa-phone"></i> +012 345 67890</p>
+            <p><i class="fas fa-envelope"></i> info@example.com</p>
+        </div>
+
+        <!-- Links -->
+        <div class="links">
+            <ul>
+                <h3>Quick Links</h3>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <ul>
+                <h3>Popular Links</h3>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="newsletter">
+            <h3>Newsletter</h3>
+            <input type="email" placeholder="Your Email Address">
+            <button>Sign Up</button>
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        © <a href="#">Your Site Name</a>, All Rights Reserved. |
+</section7>
+</body>
+</html>
