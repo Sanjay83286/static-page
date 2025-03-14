@@ -22,8 +22,8 @@
 - **Modern Design** : CSS variable-based easy customization
 
 ## Technologies Used :
--![HTML5]
--![CSS3]
+ [HTML5]
+ [CSS3]
 - Font Awesome Icons
 - Google Fonts
 
